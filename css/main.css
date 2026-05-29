@@ -57,6 +57,10 @@ img {
     float: right;
 }
 
+#desc {
+    font-weight: bold;
+}
+
 /* Responsive rules */
 
 /* DESKTOP */
