@@ -53,6 +53,10 @@ footer {
     padding: 1em;
 }
 
+img {
+    float: right;
+}
+
 /* Responsive rules */
 
 /* DESKTOP */
