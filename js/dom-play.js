@@ -36,6 +36,22 @@ function highlightActor(actor) {
                 mySpan.style.backgroundColor = "white";
             }
         }   
+
+    if(actor == mySpan.dataset.actor){
+        // Yellow Glow
+        mySpan.style.backgroundColor = 'yellow';
+        
+        // Subtle neon glow using text-shadow
+        mySpan.style.textShadow = '0 0 4px rgba(255, 215, 0, 0.6)';
+        
+        // Lift the text off the page slightly
+        mySpan.style.boxShadow = '0 2px 5px rgba(0,0,0,0.15)';
+        } else {
+        // Return to Normal
+        mySpan.style.backgroundColor = 'white';
+        mySpan.style.textShadow = 'none';
+        mySpan.style.boxShadow = 'none';
+    }
 }
 
 function highlight(el) {
