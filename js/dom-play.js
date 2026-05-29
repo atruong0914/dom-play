@@ -31,18 +31,18 @@ function highlightActor(actor) {
         for (const mySpan of spans) {
             //highlight current actor
             if (actor === mySpan.dataset.actor) {
-                mySpan.style.backgroundColor = "yellow";
+                mySpan.style.backgroundColor = "pink";
             } else {
                 mySpan.style.backgroundColor = "white";
             }
         }   
 
     if(actor == mySpan.dataset.actor){
-        // Yellow Glow
-        mySpan.style.backgroundColor = 'yellow';
+        // Pink Glow
+        mySpan.style.backgroundColor = 'pink';
         
         // Subtle neon glow using text-shadow
-        mySpan.style.textShadow = '0 0 4px rgba(255, 215, 0, 0.6)';
+        mySpan.style.textShadow = '0 0 4px rgba(255, 0, 0, 0.6)';
         
         // Lift the text off the page slightly
         mySpan.style.boxShadow = '0 2px 5px rgba(0,0,0,0.15)';
@@ -59,7 +59,7 @@ function highlight(el) {
   
    // Catch the empty string state on the first click
    if (currentBg === "" || currentBg === "white") {
-       el.style.backgroundColor = "yellow";
+       el.style.backgroundColor = "pink";
    } else {
        el.style.backgroundColor = "white";
    }
